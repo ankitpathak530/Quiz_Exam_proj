@@ -1,0 +1,16 @@
+.mt20{
+    margin-top: 20px;
+}
+.mt10{
+    margin-top:10px;
+}
+.ml10{
+    margin-left: 10px;
+}
+.not-scroll{
+    position: fixed;
+}
+.mat-success {
+    background-color: green;
+    color: #fff;
+}

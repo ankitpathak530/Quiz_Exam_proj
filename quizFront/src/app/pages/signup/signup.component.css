@@ -1,0 +1,13 @@
+.col1{
+    background-color: white;
+}
+.col2{
+    background-color: green;
+}
+.full-width{
+    width: 100%;
+}
+.small-img{
+    width: 100px;
+    height: 100px;
+}

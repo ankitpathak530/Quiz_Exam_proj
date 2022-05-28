@@ -1,0 +1,10 @@
+.example-header-image {
+    background-image: url('../../../../assets/quiz.png');
+    background-size: cover;
+  }
+  .mat-success{
+      color:green;
+  }
+  .mat-grey{
+    color:gray;
+}

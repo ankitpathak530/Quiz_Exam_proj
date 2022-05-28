@@ -1,0 +1,43 @@
+<div class="bootstrap-wrapper">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="text-center">
+              <mat-card>
+                <div class="container text-center">
+                    <img style="width: 100px;" src="../../../assets/padlock.png" class="small-img mt-5" alt="">
+                </div>
+                <h3 class="text-center"> Login here</h3>
+             
+                
+                        <form (ngSubmit)="formSubmit()">
+                            <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Username</mat-label>
+                            <input matInput placeholder="Enter username here" 
+                            [(ngModel)]="loginData.username"
+                            name="username"
+                            required>
+                            </mat-form-field><br>
+            
+                            <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Password</mat-label>
+                            <input type="password" matInput placeholder="Enter password here" 
+                                [(ngModel)]="loginData.password"
+                                name="password"
+                                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{5,}"
+                            required>
+                            </mat-form-field>
+            
+                              
+                            <div class="container text-center">
+                                <button  input type="submit" mat-raised-button color="primary">Login</button>&nbsp;&nbsp;&nbsp;
+                                <button input type="reset" mat-raised-button color="accent">Reset</button>
+                            </div>
+                        </form>
+              </mat-card>
+            </div>
+            
+          </div>
+      </div>
+  </div>
+</div>

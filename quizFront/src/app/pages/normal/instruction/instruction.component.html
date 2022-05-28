@@ -1,0 +1,59 @@
+<div class="bootstrap-wrapper">
+    <div class="contaner mt20">
+        <div class="row">
+            <div class="col-md-12">
+                <mat-card>
+
+                    <!--Header-->
+                    <div class="Container text-center">
+                        Please read the instruction carefully
+                    </div>
+
+
+
+
+                    <mat-card-content>
+                        <!--Content-->
+                        <h2><b>General Instructions</b></h2><br>
+                        <mat-divider></mat-divider>
+                        <ul>
+                            <li>
+                                The clock will be set at the server. The countdown timer in the top right corner of
+                                screen will display the remaining time available for you to complete the quiz. When the
+                                timer reaches zero, the examination will end by itself. You will
+                                not be required to end or submit your examination. <br>
+
+                            </li>
+                            <li>
+                                Do promise yourself not to involve in any malpractice.<br>
+                            </li>
+                            <li>
+                                There is <b>{{quiz.numberOfQuestions}} questions </b>in this quiz.
+                            </li>
+                            <li>
+                                Max <b>{{quiz.maxMarks}} Marks.</b>
+                            </li>
+                            <li>
+                                Each question carries <b>{{quiz.maxMarks/quiz.numberOfQuestions}} marks.</b> There is no
+                                negative marking.
+                            </li>
+                            <li>
+                                You have to submit quiz in <b>{{quiz.numberOfQuestions}} Minutes.</b>
+                            </li>
+                        </ul>
+
+
+                    </mat-card-content>
+
+
+                    <mat-card-actions class="text-center">
+
+                        <button [routerLink]="'/start/'+ qId" mat-raised-button color="success">Start Quiz</button>
+
+                    </mat-card-actions>
+
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
